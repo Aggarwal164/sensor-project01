@@ -11,7 +11,7 @@ def error_message_details(error,error_detail:sys):
     error_message = 'error occurred python script name [{0}] line number [{1}] error message [{2}]'.format(
         filename.exc_tb.tb_lineno.str(error)
     )
-
+ 
     return error_message
 
 

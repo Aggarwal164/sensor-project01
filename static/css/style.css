@@ -1,0 +1,121 @@
+/* Import Google Font properly */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap');
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background: linear-gradient(to right, #5f0a87, #a4508b);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0 20px;
+  font-weight: 700;
+}
+
+/* Frame container */
+.frame {
+  width: 400px;
+  max-width: 90%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+/* Centered content inside the frame */
+.center {
+  text-align: center;
+}
+
+/* Dropzone styling */
+.dropzone {
+  margin: 20px auto;
+  width: 100%;
+  min-height: 150px;
+  border: 2px dashed #a4508b;
+  border-radius: 10px;
+  background-color: #fdf1f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 20px;
+  transition: background 0.3s;
+}
+
+.dropzone:hover {
+  background: #ffe4ef;
+}
+
+/* Upload icon */
+.upload-icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Hide default input file style */
+.upload-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #a4508b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #5f0a87;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #8f3c74;
+  box-shadow: 0 4px 0 #4b075d;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .frame {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
